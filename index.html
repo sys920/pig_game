@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body style="height:100vh !important;">
+
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active" >
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="scoreGoal" id="scoreGoal-0"></div>
+                <div class="gamepoint" id="gamepoint-0"></div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="scoreGoal" id="scoreGoal-1"></div>
+                <div class="gamepoint" id="gamepoint-1"></div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+          
+            </div>
+ 
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <button class="btn-rules"><i class="ion-ios-help-outline"></i>Game Rules</button>
+            <button class="btn-setting"><i class="ion-ios-cog-outline"></i>Setting</button>
+
+     
+            <img src="dice-5.png" alt="Dice1" class="dice1">
+            <img src="dice-1.png" alt="Dice2" class="dice2">
+        </div>
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js"></script>
+        <script src="app.js"></script>
+        
+        
+    </body>
+</html>
