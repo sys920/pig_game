@@ -23,19 +23,9 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
-        [
-          '/',
-          'https://fonts.googleapis.com/css?family=Lato:100,300,600',
-          'https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js',
-          'index.html',
-          'app.js',
-          'style.css',
-          'dice-1.png',
-          'dice-2.png',
-          'dice-3.png',
-          'dice-4.png',
-          'dice-5.png',
-          'dice-6.png'
+        [         
+          'pig_game/index.html',
+          'pig_game/app.js'
         ]
       );
     })
