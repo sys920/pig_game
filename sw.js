@@ -31,7 +31,6 @@ self.addEventListener('install', function(event) {
           'pig_game/app.js',
           'pig_game/style.css',
           'pig_game/icons.css',  
-          'pig_game/back.jpg',     
           'pig_game/dice-1.png',
           'pig_game/dice-2.png',
           'pig_game/dice-3.png',
