@@ -1,4 +1,4 @@
-const staticCache ='my-cache-4';
+const staticCache ='my-cache-1';
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -24,8 +24,8 @@ self.addEventListener('install', function(event) {
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
         [
-          '/',
-          'dice-6.png'
+          
+          '/pig_game/dice-6.png'
         ]
       );
     })
