@@ -1,6 +1,6 @@
 
 if(navigator.serviceWorker) {
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('/pig_game/sw.js')
   .then(() => {
     console.log("Service Worker Installed");
   })
