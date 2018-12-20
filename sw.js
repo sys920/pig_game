@@ -1,4 +1,4 @@
-const staticCache ='my-cache-3';
+const staticCache ='my-cache-4';
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -25,19 +25,7 @@ self.addEventListener('install', function(event) {
       return cache.addAll(
         [
           '/',
-          'https://fonts.googleapis.com/css?family=Lato:100,300,600',
-          'https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js',
-          '/index.html',
-          '/app.js',
-          '/style.css',
-          '/icons.css',
-          '/back.jpg',
-          '/dice-1.png',
-          '/dice-2.png',
-          '/dice-3.png',
-          '/dice-4.png',
-          '/dice-5.png',
-          '/dice-6.png'
+          'dice-6.png'
         ]
       );
     })
