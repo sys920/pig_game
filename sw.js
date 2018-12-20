@@ -24,18 +24,18 @@ self.addEventListener('install', function(event) {
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
         [
-          'pig_game/',
+          '/',
           'https://fonts.googleapis.com/css?family=Lato:100,300,600',
           'https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js',
-          'pig_game/index.html',
-          'pig_game/app.js',
-          'pig_game/style.css',
-          'pig_game/dice-1.png',
-          'pig_game/dice-2.png',
-          'pig_game/dice-3.png',
-          'pig_game/dice-4.png',
-          'pig_game/dice-5.png',
-          'pig_game/dice-6.png'
+          'index.html',
+          'app.js',
+          'style.css',
+          'dice-1.png',
+          'dice-2.png',
+          'dice-3.png',
+          'dice-4.png',
+          'dice-5.png',
+          'dice-6.png'
         ]
       );
     })
