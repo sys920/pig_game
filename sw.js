@@ -30,7 +30,8 @@ self.addEventListener('install', function(event) {
           'pig_game/index.html',
           'pig_game/app.js',
           'pig_game/style.css',
-          'pig_game/icons.css',     
+          'pig_game/icons.css',  
+          'pig_game/back.jpg',     
           'pig_game/dice-1.png',
           'pig_game/dice-2.png',
           'pig_game/dice-3.png',
@@ -51,12 +52,3 @@ self.addEventListener('fetch',function(event) {
     })
   );
 });
-
-
-// self.addEventListener('fetch', function(event) {
-//   event.respondWith(
-//     fetch(event.request).catch(function() {
-//       return caches.match(event.request);
-//     })
-//   );
-// });
