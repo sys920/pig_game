@@ -23,7 +23,9 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
-        [ '/',
+        [ 
+          './',
+          'https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js',
           'index.html',
           'app.js',
           'style.css',
