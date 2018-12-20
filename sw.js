@@ -24,7 +24,7 @@ self.addEventListener('install', function(event) {
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
         [
-         '/pig_game/dice-6.png'
+         'pig_game/dice-6.png'
         ]
       );
     })
