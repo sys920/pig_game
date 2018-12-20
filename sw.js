@@ -1,4 +1,4 @@
-const staticCache ='my-cache-5';
+const staticCache ='my-cache-3';
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -24,7 +24,19 @@ self.addEventListener('install', function(event) {
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
         [
-         'pig_game/dice-6.png'
+          'pig_game/',
+          'https://fonts.googleapis.com/css?family=Lato:100,300,600',
+          'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+          'https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js',
+          'pig_game/index.html',
+          'pig_game/app.js',
+          'pig_game/style.css',
+          'pig_game/dice-1.cpng',
+          'pig_game/dice-2.cpng',
+          'pig_game/dice-3.c/png',
+          'pig_game/dice-4.cpng',
+          'pig_game/dice-5.c/png',
+          'pig_game/dice-6.cpng'
         ]
       );
     })
@@ -39,3 +51,12 @@ self.addEventListener('fetch',function(event) {
     })
   );
 });
+
+
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     fetch(event.request).catch(function() {
+//       return caches.match(event.request);
+//     })
+//   );
+// });
