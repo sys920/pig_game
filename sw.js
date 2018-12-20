@@ -24,14 +24,7 @@ self.addEventListener('install', function(event) {
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
         [
- 
-          'pig_game/',
-          'pig_game/dice-1.png',
-          'pig_game/dice-2.png',
-          'pig_game/dice-3.png',
-          'pig_game/dice-4.png',
-          'pig_game/dice-5.png',
-          'pig_game/dice-6.png'
+         '/pig_game/dice-6.png'
         ]
       );
     })
