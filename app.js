@@ -1,3 +1,14 @@
+
+if(navigator.serviceWorker) {
+  navigator.serviceWorker.register('/sw.js')
+  .then(() => {
+    console.log("Service Worker Installed");
+  })
+  .catch(() => {
+    console.log("Service Worker Did Not Installed");
+  })
+}
+
 /*
 GAME RULES:
 - The game has 2 players, playing in rounds
