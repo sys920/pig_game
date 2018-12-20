@@ -1,4 +1,4 @@
-const staticCache ='my-cache-1';
+const staticCache ='my-cache-2';
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -24,7 +24,19 @@ self.addEventListener('install', function(event) {
     caches.open(staticCache).then(function(cache) {
       return cache.addAll(
         [
-          
+          '/',
+          'https://fonts.googleapis.com/css?family=Lato:100,300,600',
+          'https://cdn.jsdelivr.net/npm/sweetalert2@7.28.8/dist/sweetalert2.all.min.js',
+          '/pig_game/index.html',
+          '/pig_game/app.js',
+          '/pig_game/style.css',
+          '/pig_game/icons.css',
+          '/pig_game/back.jpg',
+          '/pig_game/dice-1.png',
+          '/pig_game/dice-2.png',
+          '/pig_game/dice-3.png',
+          '/pig_game/dice-4.png',
+          '/pig_game/dice-5.png',
           '/pig_game/dice-6.png'
         ]
       );
