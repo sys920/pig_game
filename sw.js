@@ -29,7 +29,6 @@ self.addEventListener('install', function(event) {
           'index.html',
           'app.js',
           'style.css',
-          'icons.css', 
           'dice-1.png',
           'dice-2.png',
           'dice-3.png',

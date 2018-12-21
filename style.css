@@ -19,7 +19,7 @@ body {
     background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
     background-size: cover;
     background-position: center;
-    font-family: Lato;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 300;
     position: relative;
     height: 100vh;
@@ -61,7 +61,7 @@ body {
     text-align: center;
     } 
 .player-name {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -120,7 +120,7 @@ button {
     color: #555;
     background: none;
     border: none;
-    font-family: Lato;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
